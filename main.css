@@ -744,8 +744,112 @@ select {
   vertical-align: middle;
 }
 
-h1 {
-  color: red;
+header {
+  font-size: 0px;
+  min-height: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+header > div > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logoImg {
+  width: 40%;
+  height: 220px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logoImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.headerDescription {
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.headerDescription > article {
+  padding-right: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer > article {
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+}
+
+.leftColumn {
+  padding-right: 10px;
+}
+
+.rightColumn {
+  padding-left: 10px;
+}
+
+.asideColumns {
+  width: 25%;
+}
+
+.centerColumn {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.centerColumn > .textBlocks {
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  color: rgb(244, 209, 158);
+}
+
+.textBlocks {
+  background-color: rgb(238, 238, 238);
+  height: 100%;
+}
+
+main {
+  position: relative;
+}
+
+.mainContent {
+  font-size: 0px;
+  display: flex;
+  align-items: stretch;
+  height: fit-content;
+}
+
+article {
+  padding: 20px;
+}
+
+article > h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+article > p {
+  text-align: justify;
+}
+
+.mainContent > section {
+  font-size: 1rem;
+  height: auto;
 }
 
 /* to be continue */
