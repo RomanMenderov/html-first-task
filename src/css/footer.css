@@ -1,0 +1,9 @@
+footer {
+  margin-top: 20px;
+}
+
+footer > article {
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+}

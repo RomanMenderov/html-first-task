@@ -1,0 +1,21 @@
+.leftColumn {
+  padding-right: 10px;
+}
+
+.rightColumn {
+  padding-left: 10px;
+}
+
+.asideColumns {
+  width: 25%;
+}
+
+.centerColumn {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.centerColumn > .textBlocks {
+  padding-bottom: 50px;
+}
