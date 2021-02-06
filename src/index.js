@@ -1,50 +1,9 @@
 import "./css/index.css";
-
-const articleText = `Lorem ipsum, dolor sit amet consectetur 
-adipisicing elit. Adipisci maiores nihil voluptatem autem? 
-Sit quia ad voluptatibus error impedit vitae iure mollitia,
-laborum cum dicta a quasi. Deserunt, at explicabo.
- Lorem ipsum, dolor sit amet consectetur 
-adipisicing elit. Adipisci maiores nihil voluptatem autem? 
-Sit quia ad voluptatibus error impedit vitae iure mollitia,
-laborum cum dicta a quasi. Deserunt, at explicabo.`;
-
-const articleTitleArr = [
-  "Title One",
-  "Title Two",
-  "Title Three",
-  "Title Four",
-  "Title Five",
-  "Title Six",
-  "Title Seven",
-  "Title Eight",
-  "Title Ten",
-];
-
-function createArticleMurkupNoTitle(count) {
-  let markup = "";
-  let i = 0;
-  do {
-    markup += `<article class="text"><p>${articleText}</p></article>`;
-    i += 1;
-  } while (i < count);
-
-  return markup;
-}
-
-function createArticleMurkupWithTitle(count, titleTag = "h2", start = 0) {
-  let markup = "";
-  let i = 0;
-  do {
-    const title = `<${titleTag}>${articleTitleArr[start]}</${titleTag}>`;
-    markup += `<article class="text">${title}<p>${articleText}</p></article>`;
-    i += 1;
-    // eslint-disable-next-line no-param-reassign
-    start += 1;
-  } while (i < count);
-
-  return markup;
-}
+import {
+  createArticleMurkupNoTitle,
+  createArticleMurkupWithTitle,
+  articleTitleArr,
+} from "./content";
 
 document.querySelector(
   ".leftColumn > .textBlocks"
