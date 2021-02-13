@@ -15,14 +15,14 @@ describe("checking content creation", () => {
 
   test("it should create article no title", () => {
     const article = createArticleMurkupNoTitle(1);
-    //  const articleStartMarkup = ;
+
     expect(article).toEqual(expect.stringContaining(`<article class="text">`));
     expect((article.match(/<article class="text">/g) || []).length).toEqual(1);
   });
 
   test("it should create article with title", () => {
     const articles = createArticleMurkupWithTitle(2, "h2", 1);
-    //  const articleStartMarkup = ;
+
     expect(articles).toEqual(expect.stringContaining(`<article class="text">`));
     expect(articles).toEqual(
       expect.stringContaining(`<h2>${articleTitleArr[1]}</h2>`)
