@@ -25,10 +25,7 @@ describe("styles.test", () => {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout;
   });
 
-  [
-    { width: 1920, height: 1080 },
-    { width: 600, height: 1080 },
-  ].forEach(({ width, height }) =>
+  [{ width: 1920, height: 1080 }].forEach(({ width, height }) =>
     it(`should have proper view for ${width}x${height} params`, async () => {
       // setting up puppeteer
       const browser = await puppeteer.launch();
